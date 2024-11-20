@@ -1,13 +1,15 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import logo from '/assets/bw_logo.png';
+import logoText from '/assets/bw_logotext.png';
 
 export default function Contact() {
     return (
         <>
             <Navbar 
-                logo="/assets/bw_logo.png"
-                logoText="/assets/bw_logotext.png"
+                logo={logo}
+                logoText={logoText}
             />
             <div className="pt-32 min-h-screen bg-black px-4 font-geist">
                 <div className="max-w-7xl mx-auto">
