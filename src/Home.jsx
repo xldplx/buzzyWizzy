@@ -2,13 +2,15 @@ import { HiOutlineSparkles } from 'react-icons/hi';
 import GameCard from './components/GameCard';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import logo from '../assets/bw_logo.png';
+import logoText from '../assets/bw_logotext.png';
 
 export default function Home() {
     return (
         <>
             <Navbar 
-                logo="/assets/bw_logo.png"
-                logoText="/assets/bw_logotext.png"
+                logo={logo}
+                logoText={logoText}
             />
 
             <main className="bg-black min-h-screen select-none font-geist">
