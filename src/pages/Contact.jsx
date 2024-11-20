@@ -31,7 +31,7 @@ export default function Contact() {
                                 <FaMapMarkerAlt className="text-4xl text-white mx-auto mb-4" />
                                 <h2 className="text-2xl font-bold text-white mb-4">Location</h2>
                                 <p className="text-zinc-400 text-lg">
-                                    Cikarang, Indonesia
+                                    Jakarta, Indonesia
                                     <br />
                                     More details coming soon.
                                 </p>
