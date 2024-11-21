@@ -27,7 +27,7 @@ export default function Home() {
                             </span>
                         </h1>
                         <p className="text-zinc-400 text-xl mb-8 max-w-2xl mx-auto font-light">
-                            Pushing the boundaries of gaming innovation, one pixel at a time.
+                            That's our slogan, for now atleast. 
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <button className="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-medium transition-all text-lg w-full sm:w-auto hover:scale-105 ">
