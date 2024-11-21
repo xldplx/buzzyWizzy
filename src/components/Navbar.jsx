@@ -16,7 +16,7 @@ export default function Navbar({ logo, logoText }) {
                 <div className="grid grid-cols-3 items-center">
                     <div className="flex items-center">
                         <Link to="/">
-                            <img src={logo} alt="Buzzy Wizzy Logo" className="h-10 w-auto" />
+                            <img src={logo} alt="Buzzy Wizzy Logo" className="h-16 rounded-lg w-auto" />
                         </Link>
                     </div>
                     <div className="flex justify-center">   

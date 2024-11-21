@@ -15,13 +15,10 @@ export default function Home() {
 
             <main className="bg-black min-h-screen select-none font-geist">
                 {/* Hero Section */}
-                <section className="pt-40 pb-32 px-4 relative overflow-hidden">
+                <section className="py-[15rem] px-4 relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 to-black z-0"></div>
                     <div className="max-w-7xl mx-auto text-center relative z-10">
                         <div className="mb-8">
-                            <span className="inline-block px-4 py-2 rounded-full bg-white/10 text-white text-sm mb-6">
-                                Welcome to the Future of Gaming
-                            </span>
                         </div>
                         <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 tracking-tight">
                             Make the Impossible
@@ -29,14 +26,11 @@ export default function Home() {
                                 be Possible
                             </span>
                         </h1>
-                        <p className="text-zinc-400 text-xl mb-12 max-w-2xl mx-auto font-light">
+                        <p className="text-zinc-400 text-xl mb-8 max-w-2xl mx-auto font-light">
                             Pushing the boundaries of gaming innovation, one pixel at a time.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <button className="bg-white hover:bg-zinc-100 text-black px-8 py-4 rounded-full font-medium transition-colors text-lg w-full sm:w-auto">
-                                Explore Our Universe
-                            </button>
-                            <button className="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-medium transition-colors text-lg w-full sm:w-auto">
+                            <button className="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-medium transition-all text-lg w-full sm:w-auto hover:scale-105 ">
                                 View Our Games
                             </button>
                         </div>
@@ -71,13 +65,15 @@ export default function Home() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
                                 { role: 'Founder', name: 'Guido Sijabat' },
-                                { role: 'Co-Founder', name: 'Augusto Pratama (Harvey)' },
+                                { role: 'Co-Founder', name: 'Augusto Pratama' },
                                 { role: 'Operational Manager', name: 'Muhammad Firman Hidayat' },
                                 { role: 'Marketing Manager', name: 'Amelya Enjelita' },
-                                { role: 'Secretary', name: 'Violetta Scarlet Adeline Roeroe, Abigail Larasati' },
+                                { role: 'Secretary', name: 'Violetta Scarlet Adeline Roeroe' },
+                                { role: 'Secretary', name: 'Abigail Larasati' },
                                 { role: 'Treasurer', name: 'Rachel Syafelan Simbolon' },
-                                { role: 'Programming Lead', name: 'Alden Sayidina Radjab (Me lol)' },
-                                { role: 'Animation Lead', name: 'Aditya Pamungkas, Hardin Irfan' },
+                                { role: 'Programming Lead', name: 'Alden Sayidina Radjab' },
+                                { role: 'Animation Lead', name: 'Aditya Pamungkas' },
+                                { role: 'Animation Lead', name: 'Hardin Irfan' },
                                 { role: 'Game Development Lead', name: 'Bara Nur Imaduddin' }
                             ].map((member, index) => (
                                 <div 

@@ -16,7 +16,7 @@ export default function Games() {
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-8 hover:tracking-wider transition-all duration-300">
                             Our Games
                         </h1>
-                        <div className="bg-zinc-900/50 p-8 md:p-12 rounded-xl border border-zinc-800 hover:border-zinc-700 transition-colors duration-300 transform hover:-translate-y-1">
+                        <div className="bg-zinc-900/50 p-8 md:p-12 rounded-xl border border-zinc-800 hover:border-zinc-700 transition-all duration-300 transform hover:-translate-y-1">
                             <p className="text-zinc-400 text-lg md:text-xl">
                                 Game catalog coming soon.
                                 <br /><br />
