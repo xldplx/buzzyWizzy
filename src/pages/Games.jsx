@@ -25,7 +25,7 @@ const Games = memo(() => {
                     <div className="text-center mb-24 relative">
                         <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/50 to-black -z-10"></div>
                         <IoGameController className="text-4xl text-white mx-auto mb-6" />
-                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 hover:tracking-wider transition-all duration-300">
+                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 hover:tracking-wider transition-all duration-300">
                             Our Games
                         </h1>
                         <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
