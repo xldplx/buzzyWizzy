@@ -11,30 +11,59 @@ export default function Navbar({ logo, logoText }) {
     };
 
     return (
-        <nav className="fixed top-0 w-full bg-black/50 backdrop-blur-md border-b border-zinc-800 z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-                <div className="grid grid-cols-3 items-center">
-                    <div className="flex items-center">
-                        <Link to="/">
-                            <img src={logo} alt="Buzzy Wizzy Logo" className="h-16 rounded-lg w-auto" />
-                        </Link>
-                    </div>
-                    <div className="flex justify-center">   
-                        <Link to="/">
-                            <img src={logoText} alt="Buzzy Wizzy" className="h-14 w-auto" />
-                        </Link>
-                    </div>
-                    <div className="flex justify-end">
-                        {/* Desktop Menu */}
-                        <div className="hidden md:flex items-center space-x-8 font-geist">
-                            <Link to="/" className={`${isActivePath('/')} hover:text-white transition-colors`}>Home</Link>
-                            <Link to="/games" className={`${isActivePath('/games')} hover:text-white transition-colors`}>Games</Link>
-                            <Link to="/about" className={`${isActivePath('/about')} hover:text-white transition-colors`}>About</Link>
-                            <Link to="/contact" className={`${isActivePath('/contact')} hover:text-white transition-colors`}>Contact</Link>
+        <nav className="fixed top-0 w-full bg-black/50 backdrop-blur-md z-50">
+            <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-zinc-800 to-zinc-500 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+            </div>
+            
+            <div className="border-b border-white/10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-3 items-center h-20">
+                        <div className="flex items-center">
+                            <Link to="/" className="flex items-center">
+                                <img src={logo} alt="Buzzy Wizzy Logo" className="h-10 w-auto" />
+                            </Link>
                         </div>
-                        {/* Mobile Menu Button */}
+                        
+                        <div className="flex justify-center">
+                            <Link to="/">
+                                <img src={logoText} alt="Buzzy Wizzy" className="h-14 w-auto" />
+                            </Link>
+                        </div>
+
+                        <div className="hidden md:flex items-center justify-end space-x-8">
+                            <Link 
+                                to="/" 
+                                className={`${isActivePath('/')} hover:text-white transition-colors relative group px-3 py-2`}
+                            >
+                                <span>Home</span>
+                                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                            </Link>
+                            <Link 
+                                to="/games" 
+                                className={`${isActivePath('/games')} hover:text-white transition-colors relative group px-3 py-2`}
+                            >
+                                <span>Games</span>
+                                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                            </Link>
+                            <Link 
+                                to="/about" 
+                                className={`${isActivePath('/about')} hover:text-white transition-colors relative group px-3 py-2`}
+                            >
+                                <span>About</span>
+                                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                            </Link>
+                            <Link 
+                                to="/contact" 
+                                className={`${isActivePath('/contact')} hover:text-white transition-colors relative group px-3 py-2`}
+                            >
+                                <span>Contact</span>
+                                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                            </Link>
+                        </div>
+
                         <button 
-                            className="md:hidden text-white"
+                            className="md:hidden justify-self-end text-white"
                             onClick={() => setIsOpen(!isOpen)}
                         >
                             {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
@@ -45,7 +74,7 @@ export default function Navbar({ logo, logoText }) {
 
             {/* Mobile Menu */}
             <div className={`md:hidden bg-black/95 backdrop-blur-md ${isOpen ? 'block' : 'hidden'}`}>
-                <div className="px-4 py-4 space-y-4 font-geist">
+                <div className="px-4 py-4 space-y-4">
                     <Link to="/" className={`block ${isActivePath('/')} hover:text-white transition-colors py-2`}>Home</Link>
                     <Link to="/games" className={`block ${isActivePath('/games')} hover:text-white transition-colors py-2`}>Games</Link>
                     <Link to="/about" className={`block ${isActivePath('/about')} hover:text-white transition-colors py-2`}>About</Link>

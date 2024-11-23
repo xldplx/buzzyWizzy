@@ -51,8 +51,9 @@ export default function About() {
                                     <div className="h-[1px] bg-gradient-to-r from-transparent via-zinc-700 to-transparent flex-grow mx-8"></div>
                                 </div>
                                 <p className="text-zinc-400 text-lg">
-                                    To create innovative and engaging gaming experiences that push the boundaries of what's possible.
-                                    We believe in making the impossible possible through creativity and technology.
+                                    We are currently crafting our mission statement.
+                                    <br /><br />
+                                    Stay tuned as we define our vision for the future of gaming.
                                 </p>
                             </div>
                         </div>

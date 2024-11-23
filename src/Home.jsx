@@ -1,5 +1,6 @@
 import { HiOutlineSparkles } from 'react-icons/hi';
 import { IoGameController } from 'react-icons/io5';
+import { FaUsers } from 'react-icons/fa';
 import GameCard from './components/GameCard';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -19,11 +20,6 @@ export default function Home() {
                 <section className="py-[15rem] px-4 relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 to-black z-0"></div>
                     <div className="max-w-7xl mx-auto text-center relative z-10">
-                        <div className="mb-8">
-                            <span className="inline-block px-4 py-2 rounded-full bg-white/10 text-white text-sm mb-6">
-                                Welcome to the Future of Gaming
-                            </span>
-                        </div>
                         <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 tracking-tight">
                             Make the Impossible
                             <span className="block mt-2 bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent">
@@ -42,7 +38,7 @@ export default function Home() {
                 </section>
 
                 {/* Featured Games Section */}
-                <section className="py-32 px-4 bg-zinc-900 relative overflow-hidden">
+                <section className="py-32 px-4 bg-gradient-to-b from-zinc-900 to-black relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-800/20 via-black to-black"></div>
                     <div className="max-w-7xl mx-auto relative z-10">
                         <div className="flex items-center justify-between mb-16">
@@ -80,9 +76,10 @@ export default function Home() {
                 <section className="py-32 px-4 bg-black relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800/20 via-black to-black"></div>
                     <div className="max-w-7xl mx-auto relative z-10">
-                        <div className="text-center mb-16">
-                            <h2 className="text-4xl font-bold text-white mb-4">Our Team</h2>
-                            <p className="text-zinc-400 text-lg">Meet the creative minds behind Buzzy Wizzy</p>
+                        <div className="flex items-center justify-between mb-16">
+                            <h2 className="text-4xl font-bold text-white">Our Team</h2>
+                            <div className="h-[1px] bg-gradient-to-r from-transparent via-zinc-700 to-transparent flex-grow mx-8"></div>
+                            <FaUsers className="text-3xl text-white" />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
