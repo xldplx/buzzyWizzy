@@ -1,4 +1,5 @@
 import { HiOutlineSparkles } from 'react-icons/hi';
+import { IoGameController } from 'react-icons/io5';
 import GameCard from './components/GameCard';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -19,6 +20,9 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 to-black z-0"></div>
                     <div className="max-w-7xl mx-auto text-center relative z-10">
                         <div className="mb-8">
+                            <span className="inline-block px-4 py-2 rounded-full bg-white/10 text-white text-sm mb-6">
+                                Welcome to the Future of Gaming
+                            </span>
                         </div>
                         <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 tracking-tight">
                             Make the Impossible
@@ -27,41 +31,59 @@ export default function Home() {
                             </span>
                         </h1>
                         <p className="text-zinc-400 text-xl mb-8 max-w-2xl mx-auto font-light">
-                            That's our slogan, for now atleast. 
+                            Pushing the boundaries of gaming innovation, one pixel at a time.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <button className="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-medium transition-all text-lg w-full sm:w-auto hover:scale-105 ">
-                                View Our Games
+                            <button className="bg-white hover:bg-zinc-100 text-black px-8 py-4 rounded-full font-medium transition-all text-lg w-full sm:w-auto hover:scale-105">
+                                Explore Our Universe
                             </button>
                         </div>
                     </div>
                 </section>
 
                 {/* Featured Games Section */}
-                <section className="py-32 px-4 bg-zinc-900">
-                    <div className="max-w-7xl mx-auto">
-                        <h2 className="text-4xl font-bold text-white mb-16 text-center">Featured Games</h2>
+                <section className="py-32 px-4 bg-zinc-900 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-800/20 via-black to-black"></div>
+                    <div className="max-w-7xl mx-auto relative z-10">
+                        <div className="flex items-center justify-between mb-16">
+                            <h2 className="text-4xl font-bold text-white">Featured Games</h2>
+                            <div className="h-[1px] bg-gradient-to-r from-transparent via-zinc-700 to-transparent flex-grow mx-8"></div>
+                            <IoGameController className="text-3xl text-white" />
+                        </div>
                         <div className="grid md:grid-cols-3 gap-12">
-                            <GameCard 
-                                title="Renara" 
-                                description="This is the game description. Will edit this later."
-                            />
-                            <GameCard 
-                                title="Riverside Ranch" 
-                                description="This is the game description. Will edit this later."
-                            />
-                            <GameCard 
-                                title="Desa Harapan" 
-                                description="This is the game description. Will edit this later."
-                            />
+                            <div className="group relative">
+                                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <GameCard 
+                                    title="Renara" 
+                                    description="This is the game description. Will edit this later."
+                                />
+                            </div>
+                            <div className="group relative">
+                                <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <GameCard 
+                                    title="Riverside Ranch" 
+                                    description="This is the game description. Will edit this later."
+                                />
+                            </div>
+                            <div className="group relative">
+                                <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <GameCard 
+                                    title="Desa Harapan" 
+                                    description="This is the game description. Will edit this later."
+                                />
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 {/* Team Section */}
-                <section className="py-32 px-4 bg-black">
-                    <div className="max-w-7xl mx-auto">
-                        <h2 className="text-4xl font-bold text-white mb-16 text-center">Our Team</h2>
+                <section className="py-32 px-4 bg-black relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800/20 via-black to-black"></div>
+                    <div className="max-w-7xl mx-auto relative z-10">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl font-bold text-white mb-4">Our Team</h2>
+                            <p className="text-zinc-400 text-lg">Meet the creative minds behind Buzzy Wizzy</p>
+                        </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
                                 { role: 'Founder', name: 'Guido Sijabat' },
@@ -78,16 +100,17 @@ export default function Home() {
                             ].map((member, index) => (
                                 <div 
                                     key={index}
-                                    className="group relative overflow-hidden rounded-xl bg-zinc-900 p-6 hover:bg-zinc-800 transition-all duration-300"
+                                    className="group relative overflow-hidden rounded-xl bg-zinc-900/50 backdrop-blur-sm p-8 hover:bg-zinc-800/50 transition-all duration-300"
                                 >
-                                    <div className="absolute top-0 left-0 w-2 h-full bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                                    <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-white via-zinc-500 to-transparent transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
                                     <div className="relative z-10">
-                                        <div className="w-24 h-24 rounded-full bg-zinc-800 mx-auto mb-4 overflow-hidden">
+                                        <div className="w-24 h-24 rounded-full bg-zinc-800 mx-auto mb-6 overflow-hidden ring-2 ring-zinc-700 group-hover:ring-white transition-all duration-300">
                                             <div className="w-full h-full bg-zinc-700"></div>
                                         </div>
-                                        <h3 className="text-xl font-bold text-white text-center mb-2">{member.name}</h3>
-                                        <p className="text-zinc-400 text-center">{member.role}</p>
+                                        <h3 className="text-xl font-bold text-white text-center mb-3 group-hover:tracking-wider transition-all duration-300">{member.name}</h3>
+                                        <p className="text-zinc-400 text-center px-4 py-2 rounded-full bg-zinc-800/50 text-sm">{member.role}</p>
                                     </div>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/0 via-white/5 to-zinc-900/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 </div>
                             ))}
                         </div>

@@ -16,7 +16,10 @@ export default function Footer() {
                             <FaGithub className="text-2xl" />
                         </a>
                     </div>
-                    <p className="text-zinc-400 text-center">All rights reserved. Buzzy Wizzy 2024.</p>
+                    <div>
+                        <p className="text-zinc-400 text-center">All rights reserved. Buzzy Wizzy 2024.</p>
+                        <p className="text-zinc-400 text-center">Created by the Development Team.</p>
+                    </div>
                 </div>
             </div>
         </footer>
