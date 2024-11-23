@@ -18,16 +18,16 @@ export default function Navbar({ logo, logoText }) {
             
             <div className="border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-3 items-center h-20">
+                    <div className="grid grid-cols-3 items-center h-24">
                         <div className="flex items-center">
                             <Link to="/" className="flex items-center">
-                                <img src={logo} alt="Buzzy Wizzy Logo" className="h-10 w-auto" />
+                                <img src={logo} alt="Buzzy Wizzy Logo" className="h-14 w-auto rounded-lg" />
                             </Link>
                         </div>
                         
                         <div className="flex justify-center">
                             <Link to="/">
-                                <img src={logoText} alt="Buzzy Wizzy" className="h-14 w-auto" />
+                                <img src={logoText} alt="Buzzy Wizzy" className="h-16 w-auto rounded-lg" />
                             </Link>
                         </div>
 
